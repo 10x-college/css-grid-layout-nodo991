@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 500; 
+    letter-spacing: 10px; 
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 300px); 
+    grid-template-rows: repeat(2, 200px); 
+    gap: 20px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+.coffee {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.dark-leaf {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+.yellow-leaf {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+
+.flowers {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.room {
+    grid-column: 3;
+    grid-row: 2;
+}
+
